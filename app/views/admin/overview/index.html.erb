@@ -156,12 +156,6 @@
 
         var pie_colors = [<%= raw @pie_colors.map{|c| "'#{c}'"}.join(",") %>];
        </script>
-
-    <!--[if IE]><%= javascript_include_tag 'jqPlot/excanvas.min.js' %><![endif]-->
     <% end %>
-  <% end %>
-
-  <%= hook :admin_dashboard_stylesheet do %>
-     <%= stylesheet_link_tag 'admin/dashboard.css' %>
   <% end %>
 <% end %>
