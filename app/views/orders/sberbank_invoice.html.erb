@@ -44,7 +44,7 @@ margin:3px 0 10px;}
       </tr>
       <tr>
         <td COLSPAN="3">
-          <%= "#{@order.ship_address.zipcode}, " if @order.ship_address.zipcode %>г.&nbsp;<%= @order.ship_address.city %>, <%= [@order.ship_address.address1, @order.ship_address.address2].join %>
+          <%= sberbank_address_line @order.ship_address %>
         <div align="center" class="comment"><small>Адрес плательщика</small></div>
         </td>
       </tr>
